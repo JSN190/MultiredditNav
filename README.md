@@ -9,6 +9,7 @@ Fully tested on Chromium and should be compatible with any browser with a
 userscript manager supporting ECMAScript 6.
 
 ![MultiredditNav screenshot](https://i.imgur.com/22KQoe2.png)
+![MultiredditNav screenshot no trending](https://i.imgur.com/xhTxM6q.png)
 
 ## Installation
 You will require a userscript manager extension installed on your browser. 
