@@ -1,4 +1,8 @@
 # MultiredditNav
+![Repository Size](https://img.shields.io/github/repo-size/JSN190/MultiredditNav.svg?t&style=flat-square)
+![License](https://img.shields.io/github/license/JSN190/MultiredditNav.svg?&style=flat-square)
+![Top Language](https://img.shields.io/github/languages/top/JSN190/MultiredditNav.svg?&style=flat-square)
+
 A simple userscript to provide an unintrusive horizontal navigation bar in similar style to the trending subreddits list on your personal frontpage.
 
 Fully tested on Chromium and should be compatible with any browser with a 
