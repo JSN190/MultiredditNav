@@ -16,9 +16,7 @@ You will require a userscript manager extension installed on your browser.
 Violentmonkey is recommended for Chromium/Chrome and Firefox as it's an actively 
 maintained open source implementation.
 
-To install the script, create a new userscript in the userscript manager 
-and paste the contents, or use the import from URL option, pointing to 
-the [raw copy](https://raw.githubusercontent.com/JSN190/MultiredditNav/master/multiredditnav.user.js) of the `multiredditnav.user.js` script on the repository.
+To install the script, simply open the [raw copy](https://raw.githubusercontent.com/JSN190/MultiredditNav/master/multiredditnav.user.js) of the `multiredditnav.user.js` script and your userscript manager will take over from here.
 
 ## License
 ```
