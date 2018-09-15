@@ -3,22 +3,28 @@
 ![License](https://img.shields.io/github/license/JSN190/MultiredditNav.svg?&style=flat-square)
 ![Top Language](https://img.shields.io/github/languages/top/JSN190/MultiredditNav.svg?&style=flat-square)
 
-A simple userscript to provide an unintrusive horizontal navigation bar in similar style to the trending subreddits list on your personal frontpage.
+A simple userscript (or browser extension) to provide a non-intrusive horizontal 
+navigation bar in similar style to the trending subreddits list on your personal frontpage.
 
-Fully tested on Chromium and should be compatible with any browser with a 
+The userscript is fully tested on Chromium and should be compatible with any browser with a 
 userscript manager supporting ECMAScript 6.
 
 ![MultiredditNav screenshot](https://i.imgur.com/22KQoe2.png)
 ![MultiredditNav screenshot no trending](https://i.imgur.com/xhTxM6q.png)
 
 ## Installation
+### Userscript (recommended)
 You will require a userscript manager extension installed on your browser. 
 Violentmonkey is recommended for Chromium/Chrome and Firefox as it's an actively 
 maintained open source implementation.
 
-To install the script, create a new userscript in the userscript manager 
-and paste the contents, or use the import from URL option, pointing to 
-the [raw copy](https://raw.githubusercontent.com/JSN190/MultiredditNav/master/multiredditnav.user.js) of the `multiredditnav.user.js` script on the repository.
+To install the script, simply open the [raw copy](https://raw.githubusercontent.com/JSN190/MultiredditNav/master/build/userscript/multiredditnav.user.js) of the `multiredditnav.user.js` script and your userscript manager will take over from here.
+
+## Browser Extension
+
+This userscript is also available in the form of a WebExtensions API addon, natively supported by both
+modern versions of Chromium/Chrome and Firefox based browsers. While there is a built .zip available, there
+currently isn't a signed .xpi available yet - this will be available very shortly.
 
 ## License
 ```

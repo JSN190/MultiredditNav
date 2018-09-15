@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "MuiliredditNav",
+    "description": "Horizontal navigation for multireddits on Reddit's classic interface.",
+    "version": "1.0",
+    "permissions": [
+        "*://*.reddit.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*.reddit.com/*"],
+            "css": ["styles.css"],
+            "js": ["main.js"],
+            "run_at": "document_start"
+        }
+    ]
+}
