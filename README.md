@@ -23,7 +23,7 @@ To install the script, simply open the [raw copy](https://raw.githubusercontent.
 ### Browser Extension
 
 This userscript is also available in the form of a WebExtensions API addon, natively supported by both
-modern versions of Chromium/Chrome and Firefox based browsers. Firefox users can install it [https://addons.mozilla.org/en-GB/firefox/addon/multiredditnav/] from the Firefox Add-ons site.
+modern versions of Chromium/Chrome and Firefox based browsers. Firefox users can install it [directly](https://addons.mozilla.org/en-GB/firefox/addon/multiredditnav/) from the Firefox Add-ons site.
 
 ## Building
 To compile the source code into the appropriate medium for your target, install the project dependencies
