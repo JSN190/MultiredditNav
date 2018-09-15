@@ -1,5 +1,5 @@
 # MultiredditNav
-![Repository Size](https://img.shields.io/github/repo-size/JSN190/MultiredditNav.svg?t&style=flat-square)
+![Code Size](https://img.shields.io/github/languages/code-size/JSN190/MultiredditNav.svg?t&style=flat-square)
 ![License](https://img.shields.io/github/license/JSN190/MultiredditNav.svg?&style=flat-square)
 ![Top Language](https://img.shields.io/github/languages/top/JSN190/MultiredditNav.svg?&style=flat-square)
 
