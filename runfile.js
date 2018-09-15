@@ -34,7 +34,7 @@ function make() {
             });
         },
         webextension: function() {
-            return this.webextension();
+            return this.webextensions();
         },
         userscript: function() {
             return new Promise(resolve => {
