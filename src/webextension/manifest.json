@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "MultiredditNav",
-    "description": "Horizontal navigation for multireddits on Reddit's classic interface.",
+    "description": "Convenient horizontal navigation for multireddits on Reddit's classic interface.",
     "version": "1.0",
     "permissions": [
         "*://*.reddit.com/*"

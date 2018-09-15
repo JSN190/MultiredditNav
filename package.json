@@ -1,7 +1,7 @@
 {
   "name": "multiredditnav",
   "version": "1.0.0",
-  "description": "Horizontal navigation for multireddits on Reddit's classic interface.",
+  "description": "Convenient horizontal navigation for multireddits on Reddit's classic interface.",
   "scripts": {
     "build": "npx run make",
     "make": "npx run make"
