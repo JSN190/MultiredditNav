@@ -42,14 +42,17 @@ function make() {
                 const sourceDir = path.join(__dirname, "src/webextension/");
                 const mainScript = path.join(sourceDir, "main.js");
                 const mainScriptBuild = path.join(buildDir, "main.js");
+                const license = fs.readFileSync(path.join(__dirname, "src/common/license"));
                 fs.mkdirsSync(buildDir);
 
                 staticFiles.forEach(file => fs.copyFileSync(path.join(sourceDir, file),
                     path.join(buildDir, file)));
-                run("npx web-ext build --source-dir=build/webextension/ --artifacts-dir=build/webextension/\
-                    --overwrite-dest");
+                const output = fs.createWriteStream(mainScriptBuild, { flag: "a" });
+                output.write(license + "\n");
                 bundleAndMinify(mainScript).then(min => {
-                    fs.writeFileSync(mainScriptBuild, min);
+                    output.end(min);
+                    run("npx web-ext build --source-dir=build/webextension/ --artifacts-dir=build/webextension/\
+                    --overwrite-dest");
                     console.log(`\x1b[32mSuccessfully built to ${buildDir}.\x1b[0m`);
                     resolve();
                 });
@@ -64,9 +67,12 @@ function make() {
                 const sourceDir = path.join(__dirname, "src/userscript/");
                 const userscript = path.join(sourceDir, "main.js");
                 const manifest = fs.readFileSync(path.join(sourceDir, "manifest"));
+                const license = fs.readFileSync(path.join(__dirname, "src/common/license"));
+                const userscriptBuild = path.join(buildDir, "multiredditnav.min.user.js");
                 fs.mkdirsSync(buildDir);
-                const output = fs.createWriteStream(path.join(buildDir, "multiredditnav.min.user.js"), { flag: "a" });
-                output.write(manifest);
+
+                const output = fs.createWriteStream(userscriptBuild, { flag: "a" });
+                output.write(manifest + "\n" + license + "\n");
                 bundleAndMinify(userscript).then(min => {
                     output.end(min);
                     console.log(`\x1b[32mSuccessfully built to ${buildDir}.\x1b[0m`);
