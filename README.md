@@ -20,11 +20,16 @@ maintained open source implementation.
 
 To install the script, simply open the [raw copy](https://raw.githubusercontent.com/JSN190/MultiredditNav/master/build/userscript/multiredditnav.user.js) of the `multiredditnav.user.js` script and your userscript manager will take over from here.
 
-## Browser Extension
+### Browser Extension
 
 This userscript is also available in the form of a WebExtensions API addon, natively supported by both
 modern versions of Chromium/Chrome and Firefox based browsers. While there is a built .zip available, there
 currently isn't a signed .xpi available yet - this will be available very shortly.
+
+## Building
+To compile the source code into the appropriate medium for your target, install the project dependencies
+with `npm install` and run `npx run make [target]`, where `[target]` has the value of either `userscript` or 
+`webextension`. Output will be available in the `/build` directory.
 
 ## License
 ```
