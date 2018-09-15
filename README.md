@@ -26,6 +26,11 @@ This userscript is also available in the form of a WebExtensions API addon, nati
 modern versions of Chromium/Chrome and Firefox based browsers. While there is a built .zip available, there
 currently isn't a signed .xpi available yet - this will be available very shortly.
 
+## Building
+To compile the source code into the appropriate medium for your target, install the project dependencies
+with `npm install` and run `npx run make [target]`, where `[target]` has the value of either `userscript` or 
+`webextension`. Output will be available in the `/build` directory.
+
 ## License
 ```
 Copyright (C) 2018 John Su
