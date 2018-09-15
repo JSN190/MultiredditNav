@@ -14,7 +14,7 @@
  * along with this program.  If not, see https://www.gnu.org/licenses.
  */
 
-function mutateDOM() {
+module.exports.mutateDOM = function() {
     // Get multireddits from left sidebar
     const sortSuffix = document.URL.match(/(best|top|hot|new|rising|controversial|top)\/*$/g);
     const leftSidebar = document.querySelector(".listing-chooser");
@@ -57,49 +57,4 @@ function mutateDOM() {
     if (!document.querySelector(".trending-subreddits")) {
         payload.style.setProperty("margin-bottom", "7.5px");
     }
-}
-
-function injectStyles() {
-    const head = document.querySelector("head");
-    const style = document.createElement("style");
-    style.innerHTML = `
-    .multiredditnav-links {
-        width: auto;
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        align-items: center;
-        margin: 10px 0px 0px 59px;
-        font-size: 10px;
-    color: #888888;
-    }
-
-    .multiredditnav-link:nth-child(n+2), .trending-subreddits ul, .trending-subreddits .comments  {
-        margin-left: 0.5em;
-    }
-
-    .trending-subreddits strong:before {
-        display: none !important;
-    }
-
-    .trending-subreddits {
-        margin-bottom: 5px;
-    }
-
-    .trending-subreddits strong {
-        color: #888888 !important;
-    }
-
-    .midcol-spacer {
-        width: 3.1ex !important;
-    }
-
-    .trending-subreddits, .multiredditnav-links {
-        position: relative;
-        left: -35px;
-    }`;
-    head.appendChild(style);
-}
-
-if (!chrome.extension) injectStyles();
-document.addEventListener("DOMContentLoaded", () => mutateDOM());
+};

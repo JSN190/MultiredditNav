@@ -11,7 +11,7 @@
             "matches": ["*://*.reddit.com/*"],
             "css": ["styles.css"],
             "js": ["main.js"],
-            "run_at": "document_start"
+            "run_at": "document_end"
         }
     ]
 }
