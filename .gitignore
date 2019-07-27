@@ -1,3 +1,6 @@
+# Build directory
+build/
+
 # Created by https://www.gitignore.io
 ### Git ###
 *.orig
@@ -128,3 +131,5 @@ typings/
 .serverless
 
 # End of https://www.gitignore.io
+
+
