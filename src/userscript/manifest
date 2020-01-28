@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name MultiredditNav
 // @description Convenient horizontal navigation for multireddits on Reddit's classic interface.
-// @namespace https://github.com/JSN190/MultiredditNav
-// @downloadURL https://raw.githubusercontent.com/JSN190/MultiredditNav/distribution/build/userscript/multiredditnav.min.user.js
+// @namespace https://github.com/Tyncture/MultiredditNav
+// @downloadURL https://raw.githubusercontent.com/Tyncture/MultiredditNav/distribution/build/userscript/multiredditnav.min.user.js
 // @include /^https:\/\/(www|old).reddit.com\/(best|top|hot|new|rising|controversial|top)*\/*$/
 // @include /^https:\/\/(www|old).reddit.com\/me\/m\/[a-zA-Z0-9]+\/(best|top|hot|new|rising|controversial|top)*\/*$/
 // @run-at document-start
