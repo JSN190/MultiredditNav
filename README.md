@@ -9,7 +9,6 @@ navigation bar in similar style to the trending subreddits list on your personal
 The userscript is fully tested on Chromium and should be compatible with any browser with a 
 userscript manager supporting ECMAScript 6.
 
-![MultiredditNav screenshot](https://i.imgur.com/22KQoe2.png)
 ![MultiredditNav screenshot no trending](https://i.imgur.com/xhTxM6q.png)
 
 ## Installation
